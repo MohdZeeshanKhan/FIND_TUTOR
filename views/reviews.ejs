@@ -1,0 +1,36 @@
+<%-include("partials/header");-%>
+
+
+    <h3 style="margin-top: 10%;">Post</h3>
+    <form class="" action="/review" method="post">
+        <div class="form-group">
+
+           
+            <label>Name</label>
+            <input class="form-control" type="text" name="name" required="true">
+
+            <label>Enter image URL</label>
+            <input class="form-control" type="text" name="image" required="true">
+           
+
+            <label>Rating</label>
+            <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect02" name="rating" required="true">
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+            </div>
+
+            <!-- <label>Difficulty</label>
+        <input class="form-control" type="text" name="postDifficulty"> -->
+
+            <label>Discription</label>
+            <textarea class="form-control" name="content" rows="5" cols="30" required="true"></textarea>
+            </.div>
+            <button class="btn btn-warning" type="submit" name="button" style="margin-top: 2%;">Publish</button>
+    </form>
